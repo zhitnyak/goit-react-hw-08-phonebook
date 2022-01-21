@@ -1,31 +1,55 @@
-.list {
+.form {
+  padding: 5px;
   display: flex;
   flex-direction: column;
+  width: 450px;
+  margin: 0 auto;
   align-items: center;
 }
-.listItem {
-  width: 400px;
+
+.label:not(:last-child) {
+  margin-bottom: 15px;
+}
+.label {
+  font-size: 16px;
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  flex-direction: column;
+}
+
+.btn:hover {
+  box-shadow: 2px 2px 5px #aaaaaa;
+}
+
+.input {
+  padding: 10px;
+  font-size: 15px;
+  border: 10px solid rgba 255, 255, 255, 0.5;
+
+  border-radius: 10px;
+  appearance: none;
+  outline: none;
+  margin-left: 5px;
+  width: 300px;
+  text-align: center;
+}
+
+.input:hover {
+  box-shadow: 2px 2px 5px #aaaaaa;
 }
 
 .btn {
   text-decoration: none;
   display: inline-block;
-  text-decoration: none;
-  display: inline-block;
-  padding: 0px 10px;
-  margin: 5px;
-  border-radius: 15px;
-  font-family: "Montserrat", sans-serif;
   position: relative;
   overflow: hidden;
   border: 2px solid rgba 255, 255, 255, 0.5;
-  border-radius: 15px;
   font-family: "Montserrat", sans-serif;
   color: #aaaaaa;
   transition: 0.2s ease-in-out;
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 10px;
+  letter-spacing: 2px;
   color: rgba(0, 0, 0, 0.671);
 }
 .btn:before {

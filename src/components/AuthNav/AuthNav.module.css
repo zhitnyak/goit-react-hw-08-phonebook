@@ -1,0 +1,18 @@
+.link:not(:last-child) {
+  margin-right: 15px;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 1.667;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.activeLink,
+.link:hover,
+.link:focus {
+  color: #474747;
+  outline: none;
+}
