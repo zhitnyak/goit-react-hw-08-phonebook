@@ -1,0 +1,23 @@
+.form {
+  /* margin-left: 100px; */
+  border: 1px solid black;
+  max-width: 300px;
+  padding: 10px;
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.btn {
+  margin-top: 20px;
+  width: 100px;
+  padding: 0 5px;
+}
+.btn:focus {
+  background-color: rgb(125, 124, 148);
+}
+.btn:hover {
+  font-weight: 700;
+}
