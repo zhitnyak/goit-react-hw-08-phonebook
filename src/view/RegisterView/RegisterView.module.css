@@ -1,0 +1,77 @@
+.form {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  width: 350px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.label:not(:last-child) {
+  margin-bottom: 15px;
+}
+.label {
+  text-shadow: 1px 1px 1px silver, -1px 1px 1px silver;
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+}
+
+.btn:hover {
+  box-shadow: 2px 2px 5px #aaaaaa;
+}
+
+.input {
+  padding: 10px;
+  font-size: 15px;
+  border: 10px solid rgba 255, 255, 255, 0.5;
+
+  border-radius: 10px;
+  appearance: none;
+  outline: none;
+  margin-left: 5px;
+  width: 300px;
+  text-align: center;
+}
+
+.input:hover {
+  box-shadow: 2px 2px 5px #aaaaaa;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid rgba 255, 255, 255, 0.5;
+  font-family: "Montserrat", sans-serif;
+  color: #aaaaaa;
+  transition: 0.2s ease-in-out;
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 0.671);
+}
+.btn:before {
+  content: "";
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.5)
+  );
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -8px;
+  left: -75px;
+  transform: skewX(-45deg);
+}
+.btn:hover {
+  background: #aaaaaa;
+  color: rgb(0, 0, 0);
+}
+.btn:hover:before {
+  left: 150px;
+  transition: 0.5s ease-in-out;
+}
