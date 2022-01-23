@@ -2,7 +2,7 @@ import { Switch } from "react-router-dom";
 import { useEffect, Suspense, lazy } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Loader from "react-loader-spinner";
-import "./App.module.css";
+import "./App.css";
 import Container from "./components/Container/Container";
 import AppBar from "./components/AppBar/AppBar";
 import operations from "./redux/auth/authOperations";
