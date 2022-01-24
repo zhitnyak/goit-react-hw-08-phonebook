@@ -29,22 +29,22 @@ export default function App() {
         <AppBar />
         <Suspense
           fallback={
-            <Loader
-              type="Oval"
-              color="#DCB60E"
-              height={60}
-              width={60}
-              style={{ textAlign: "center", paddingTop: "20px" }}
-            />
-
             // <Loader
-            //   style={{ textAlign: "center", marginTop: "15px" }}
-            //   type="Audio"
+            //   type="Oval"
             //   color="#3f81e4"
-            //   height={100}
-            //   width={100}
-            //   timeout={3000} //3 secs
+            //   height={60}
+            //   width={60}
+            //   style={{ textAlign: "center", paddingTop: "20px" }}
             // />
+
+            <Loader
+              style={{ textAlign: "center", marginTop: "15px" }}
+              type="Audio"
+              color="#DCB60E"
+              height={100}
+              width={100}
+              timeout={3000}
+            />
           }
         >
           <Switch>
