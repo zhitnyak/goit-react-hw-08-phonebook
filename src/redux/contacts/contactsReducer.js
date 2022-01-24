@@ -1,7 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { getContacts, addContact, removeContact } from "./contactsOperations";
 
-//can use IMMER to mutate a copy of a state
 const contactsSlice = createSlice({
   name: "contacts",
   initialState: { entities: [], isLoading: false, error: null },
