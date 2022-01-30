@@ -42,7 +42,7 @@ export default function RegisterView() {
         Name
         <input
           name="name"
-          placeholder="Steve Jobs"
+          placeholder="Freddie Mercury"
           pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
           required
           onChange={handleChange}
