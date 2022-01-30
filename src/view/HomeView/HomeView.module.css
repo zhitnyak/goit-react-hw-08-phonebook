@@ -1,13 +1,12 @@
 .img {
   height: 500px;
-
 }
 
 .message {
-  display: block;
-  text-shadow: 4px 4px 4px rgb(136, 136, 136);
+  display: flex;
+  justify-content: center;
+  text-shadow: 4px 4px 4px rgb(176, 206, 4);
   color: rgb(0, 0, 0);
   font-size: 36px;
   margin-top: 40vh;
-
 }
