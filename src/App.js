@@ -1,7 +1,7 @@
 import { Switch } from "react-router-dom";
 import { useEffect, Suspense, lazy } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Loader from "react-loader-spinner";
+import { Oval } from "react-loader-spinner";
 import "./App.css";
 import Container from "./components/Container/Container";
 import AppBar from "./components/AppBar/AppBar";
@@ -15,7 +15,7 @@ const RegisterView = lazy(() => import("./view/RegisterView/RegisterView"));
 const HomeView = lazy(() => import("./view/HomeView/HomeView"));
 const ContactsView = lazy(() => import("./view/ContactsView/ContactsView"));
 
-export default function App() {
+function App() {
   const dispatch = useDispatch();
   const isFetchingCurrentUser = useSelector(getIsFetchingCurrent);
 
@@ -29,22 +29,32 @@ export default function App() {
         <AppBar />
         <Suspense
           fallback={
-            // <Loader
-            //   type="Oval"
-            //   color="#3f81e4"
-            //   height={60}
-            //   width={60}
-            //   style={{ textAlign: "center", paddingTop: "20px" }}
+            <div
+              style={{
+                textAlign: "center",
+                marginTop: "15px",
+                display: "flex",
+                width: "100vw",
+                height: "100vh",
+                justifyContent: "center",
+              }}
+            >
+              <Oval
+                type="Oval"
+                color="#DCB60E"
+                height={60}
+                width={60}
+                style={{ textAlign: "center", marginTop: "15px" }}
+              />
+            </div>
+            // <Audio
+            //   style={{ textAlign: "center", marginTop: "15px" }}
+            //   type="Audio"
+            //   color="#DCB60E"
+            //   height={100}
+            //   width={100}
+            //   timeout={3000}
             // />
-
-            <Loader
-              style={{ textAlign: "center", marginTop: "15px" }}
-              type="Audio"
-              color="#DCB60E"
-              height={100}
-              width={100}
-              timeout={3000}
-            />
           }
         >
           <Switch>
@@ -66,3 +76,4 @@ export default function App() {
     )
   );
 }
+export default App;
