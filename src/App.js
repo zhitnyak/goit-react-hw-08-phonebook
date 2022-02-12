@@ -34,27 +34,17 @@ function App() {
                 textAlign: "center",
                 marginTop: "15px",
                 display: "flex",
-                width: "100vw",
-                height: "100vh",
                 justifyContent: "center",
               }}
             >
               <Oval
                 type="Oval"
-                color="#DCB60E"
+                color="rgb(155, 165, 8)"
                 height={60}
                 width={60}
-                style={{ textAlign: "center", marginTop: "15px" }}
+                timeout={3000}
               />
             </div>
-            // <Audio
-            //   style={{ textAlign: "center", marginTop: "15px" }}
-            //   type="Audio"
-            //   color="#DCB60E"
-            //   height={100}
-            //   width={100}
-            //   timeout={3000}
-            // />
           }
         >
           <Switch>
